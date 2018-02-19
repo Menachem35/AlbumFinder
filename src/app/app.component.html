@@ -1,0 +1,31 @@
+<div class="container">
+
+	<div class="row header">
+		<div class="col-xl-12">
+			<h1>
+				Welcome to {{title}}!
+			</h1>
+		</div>
+	</div>
+	
+	<div class="row">
+	
+		<div class="col-xl-12">
+			<p>Enter artist name to see full albums list</p>
+			
+			<input type="text" placeholder="enter artist" [(ngModel)]="artist" (click)="getAlbums()">
+			<button (click)="getAlbums()">Search</button>
+   
+			<div class="albums-container d-flex flex-xl-row flex-lg-row flex-md-row flex-sm-column flex-column" *ngFor="let album of albumListByArtist">
+				<div class="p-2">
+						<img src={{album.artworkUrl100}} />
+				</div>
+				<div class="p-2">
+						{{album.collectionName}}
+				</div>
+			</div>
+		</div>
+		
+	</div>
+  
+ </div>
