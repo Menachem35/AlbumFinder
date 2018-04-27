@@ -7,4 +7,4 @@ Feel free to use, to learn - I made sure to put comments, and enjoy your coding.
 
 I used Bootstrap 4 for the Grid. 
 
-See in action: https://angular-nqkcmj.stackblitz.io
+See in action: https://stackblitz.com/edit/album-finder
